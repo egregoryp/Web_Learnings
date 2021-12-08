@@ -135,9 +135,9 @@ hr{
 #divisorSp{
     border-style:solid; 
     border-color:#000179;     
-    width: 860px;
+    width: 850px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0px;
 }
 h4{
     text-align: left;    
