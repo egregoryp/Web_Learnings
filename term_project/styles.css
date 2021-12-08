@@ -14,6 +14,8 @@ nav{
 .imgShadow{
     box-shadow: 2px 2px 2px #000179;
     border-radius:15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 #mainContent{    
     box-shadow: 1px 2px 2px 2px #000179;
@@ -99,20 +101,17 @@ h2 {
     font-size: large;
     font-variant: small-caps;
     text-transform: capitalize;  
-    text-align: center;  
-    padding: 2px;
-    margin: 2px;
+    text-align: center;      
 }
 h3 {
     /*color: #6B6B00;*/
-    color: #FFFFFF;
+    color: #6F6F6F;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     font-variant: small-caps;
     text-transform: capitalize;  
     text-align: left;      
-    display:inline; 
-    opacity: 60%;
+    display:inline;     
 }
 .subHeading{
     text-decoration: none;
@@ -203,11 +202,6 @@ h4{
 }
 .message {
     margin-bottom: 15px; 
-}
-.image {
-    float:left; 
-    margin-right: 10px; 
-    width: 5px;
 }
 .user {
     float:left; 
