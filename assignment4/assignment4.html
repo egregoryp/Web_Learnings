@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by Epena 
+  --Author: Elias Gregorio Pena Evertz
+  --Student Number: 301166037
+  -->
+
+<head>
+    <title>Continuing Education Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="mainContent">
+        <header id="top">
+            <br>
+            <div id="logo">
+                <a href="https://www.centennialcollege.ca/" target="_blank" tittle="Centennial College">
+                    <img id="logoImg" src="../images/CentennialCollegeLogoP.png" alt="Setas logo">
+                </a>
+            </div>
+            <br>
+            <hr>
+            <nav>
+                <a class="menu" href="../index.html">Home</a>
+                <a class="menu" href="../index.html#info">Brief Personal Information</a>
+                <div class="dropdown">
+                    <a class="menu" href="../assignment2/assignment2.html">Assignments</a>
+                    <div class="dropdown-content">
+                        <a href="../assignment2/assignment2.html">Assignment 2</a>
+                        <a href="../assignment3/assignment3.html">Assignment 3</a>
+                        <a href="assignment4.html">Assignment 4</a>
+                        <a href="../term_project/real_estate_Index.html">Term Project</a>
+                    </div>
+                </div>
+                <a class="menu" href="mailto:epenaeve@my.centennialcollege.ca">Contact Us</a>
+            </nav>
+            <hr>
+            <main>
+                <form action="http://studentweb.cencol.ca/pgignac/results.php" method="post">
+                    <table id="mainTable">
+                        <tr>
+                            <td colspan="2">
+                                <h1>Centennial College</h1>
+                                <h2>Continuing Education Course / Instructor Evaluation</h2>
+                            </td>
+                            <br>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Please read each statement carefully and consider each one infividually.
+                                    <b>Fill</b> the form according to your choice. (<b>One answer</b> for
+                                    each
+                                    question).
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <label for="txtCourseName">Course Name/Code:</label>
+                                    <input name="txtCourseName" type="text" tabindex="1">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <label for="optSemester">Education:</label>
+                                    <input id="optSemester" name="optSemester" tabindex="3" type="radio" value="F"> Fall
+                                    <input id="optSemester" name="optSemester" tabindex="5" type="radio" value="W">
+                                    Winter
+                                    <input id="optSemester" name="optSemester" tabindex="7" type="radio" value="S">
+                                    Spring /
+                                    Summer
+                                    <label class="lblYear" for="txtYear">Year: </label>
+                                    <input name="txtYear" type="text" tabindex="9">
+                                </span>
+                            </td>
+
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td colspan="2">
+                                <span>
+                                    <label for="txtInstructor">Instructor:</label>
+                                    <input name="txtInstructor" type="text" tabindex="11">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Instructor</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                1. <span class="importantMsg">knowledge</span> of subject?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optKnowledge" type="radio" value="E" tabindex="13"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optKnowledge" type="radio" value="G" tabindex="15"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optKnowledge" type="radio" value="F" tabindex="17"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optKnowledge" type="radio" value="N" tabindex="19"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                2. <span class="importantMsg">helpfulness?</span>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optHelpfulness" type="radio" value="E" tabindex="21"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optHelpfulness" type="radio" value="G" tabindex="23"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optHelpfulness" type="radio" value="F" tabindex="25"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optHelpfulness" type="radio" value="N" tabindex="27"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                3. <span class="importantMsg">courtesy and respect</span> for all students?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optCourtesy" type="radio" value="E" tabindex="29"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optCourtesy" type="radio" value="G" tabindex="31"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optCourtesy" type="radio" value="F" tabindex="33"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optCourtesy" type="radio" value="N" tabindex="35"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                4. <span class="importantMsg">communication</span> skills?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optCommunication" type="radio" value="E" tabindex="37"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optCommunication" type="radio" value="G" tabindex="39"> (b)
+                                Good
+                            </td>
+                            <td>
+                                <input name="optCommunication" type="radio" value="F" tabindex="41"> (c)
+                                Fair
+                                <span class="spaceRd"></span>
+                                <input name="optCommunication" type="radio" value="N" tabindex="43"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                5. overall <span class="importantMsg">performance</span>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optPerformance" type="radio" value="E" tabindex="45"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optPerformance" type="radio" value="G" tabindex="47"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optPerformance" type="radio" value="F" tabindex="49"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optPerformance" type="radio" value="N" tabindex="51"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Course</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                6. How would you rate the <span class="importantMsg">course material</span>?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optMaterial" type="radio" value="E" tabindex="53"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optMaterial" type="radio" value="G" tabindex="55"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optMaterial" type="radio" value="F" tabindex="57"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optMaterial" type="radio" value="N" tabindex="59"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                7. How much did this course meet your <span class="importantMsg">expectations</span>?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optExpectations" type="radio" value="E" tabindex="61"> (a)
+                                Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optExpectations" type="radio" value="G" tabindex="63"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optExpectations" type="radio" value="F" tabindex="65"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optExpectations" type="radio" value="N" tabindex="67"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                8. How would you rate this course (<span class="importantMsg">overall</span>)?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <input name="optOverall" type="radio" value="E" tabindex="69"> (a) Excellent
+                                <span class="spaceRd"></span>
+                                <input name="optOverall" type="radio" value="G" tabindex="71"> (b) Good
+                            </td>
+                            <td>
+                                <input name="optOverall" type="radio" value="F" tabindex="73"> (c) Fair
+                                <span class="spaceRd"></span>
+                                <input name="optOverall" type="radio" value="N" tabindex="75"> (d) Not
+                                Satisfactory
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>General Information</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                9. Was the <span class="importantMsg">course outline</span>
+                                reviewd/explained at the
+                                beginning of yout course?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td colspan="2">
+                                <span>
+                                    <input name="optOutline" type="radio" value="Y" tabindex="77"> (a) Yes
+                                    <span class="spaceRdWhole"></span>
+                                    <input name="optOutline" type="radio" value="N" tabindex="79"> (b) No
+                                    <span class="spaceRdWhole"></span>
+                                    <input name="optOutline" type="radio" value="X" tabindex="81"> (c) Not Sure
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="questionLabel">
+                                10. Would you <span class="importantMsg">recommend</span> this course to a
+                                friend with
+                                the same interests?
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td colspan="2">
+                                <span>
+                                    <input name="optRecommend" type="radio" value="Y" tabindex="83"> (a) Yes
+                                    <span class="spaceRdWhole"></span>
+                                    <input name="optRecommend" type="radio" value="N" tabindex="85"> (b) No
+                                    <span class="spaceRdWhole"></span>
+                                    <input name="optRecommend" type="radio" value="X" tabindex="87"> (c) Not
+                                    Sure
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Any Other Comments</h3>
+                                <span>(please use the back of the computer
+                                    card or this paper if necessary)</span>
+                            </td>
+                        </tr>
+                        <tr class="otherQuestion">
+                            <td class="questionLabel">
+                                11. What is the <span class="importantMsg">best thing</span> about this
+                                course?
+                            </td>
+                            <td>
+                                <input name="txtBestThing" type="text" size="70" tabindex="89">
+                            </td>
+                        </tr>
+                        <tr class="otherQuestion">
+                            <td class="questionLabel">
+                                12. How could we <span class="importantMsg">improve</span> this course?
+                            </td>
+                            <td>
+                                <input name="txtImprove" type="text" size="70" tabindex="91">
+                            </td>
+                        </tr>
+                        <tr class="otherQuestion">
+                            <td colspan="2">
+                                <span>
+                                    <div><label for="txtSpecialReq">13. Other:</label></div>
+                                    <textarea id="txtSpecialReq" name="txtSpecialReq" cols="110" rows="4" tabindex="93"
+                                        placeholder="Please let us know about other comments (e.g. complaints, suggestions, etc.)"></textarea>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <input name="btnSubmit" tabindex="95" type="submit" value="Submit Form">
+                                <input name="btnReset" tabindex="97" type="reset" value="Clear Form">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <br>
+                <p class="finalMsg">Thank you! We pay attention to your feedback!</p>
+                <p class="finalMsg">
+                    Web:
+                    <a href="https://www.centennialcollege.ca/continuing_education"
+                        target="_blank">www.centennialcollege.ca/continuing_education</a>
+                    Email:
+                    <a
+                        href="mailto:Continuingeducation@centennialcollege.ca">Continuingeducation@centennialcollege.ca</a>
+                </p>
+                <br>
+            </main>
+            <footer>
+                <hr>
+                <h6>&copy;&nbsp;Elias Gregorio Pena Evertz - Student Number: 301166037 Course: COMP213 SEC001 Semester:
+                    Fall 2021 Copyright</h6>
+                <hr>
+            </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color:gray; 
+    background-color:#d4c4cc;
+    background: linear-gradient(to bottom, lavender, #a8c78d, lavender, #a8c78d);
+}
+nav{
+    text-align: center;
+}
+.imgShadow{
+    box-shadow: 2px 2px 2px olive;
+    border-radius:10px;
+}
+
+#mainContent{    
+    box-shadow: 1px 2px 2px 2px olive;
+    border-radius: 15px;
+    padding: 15px;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ecfcec;    
+    opacity: 0.90;   
+}
+main {
+    width: 860px;
+    margin-right: auto;
+    margin-left: auto;
+}
+hr{
+    border-style:solid; 
+    border-color:olive; 
+    border-width:2px;
+    margin-left: 18px; 
+    margin-right:18px;
+}
+#divisorSp{
+    border-style:solid; 
+    border-color:olive; 
+    border-width:2px;
+    margin-left: 70px; 
+    margin-right:70px;
+}
+h4{
+    text-align: left;    
+}
+h4{
+    text-align: left;    
+}
+h6{
+    text-align: right; 
+    padding-right: 16px;
+}
+#topGamingLaptops {
+    border: medium solid #b395a0;
+    border-spacing: 0pc;    
+    margin: auto;
+}
+#logo{
+    background-image: url('../images/chellesnatureseychelles.jpg'); 
+    width:630px;  
+    height:125px; 
+    background-position-x: center;    
+    background-position-y: 42%;    
+    margin-left: auto; 
+    margin-right: auto;  
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 3px olive; 
+}
+.center{
+    text-align: center;
+}
+#profile{
+    padding-left: 120px; 
+    padding-right: 120px;
+}
+.gifBullets{
+    list-style-image: url(../images/animated-bullet-10.gif);
+}
+footer{
+    text-align: right;
+}
+.menu {
+    text-decoration: none;
+    color: #e4e9e0;
+    background-color: olive;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-right: 27px;
+    padding-left: 27px;     
+    padding-bottom: 5px;
+    font-weight: 900;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menu:hover{
+    color: olive;
+    background-color: #a8c78d;
+}  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: olive;    
+    min-width: 169px;    
+    border-radius: 3px;
+    padding-top: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: #e4e9e0;
+    font-weight: 900;
+    font-size: 0.9em;
+    padding: 7px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    color: olive;
+    background-color: #a8c78d;
+}
+.dropdown:hover .dropdown-content {display: block;}

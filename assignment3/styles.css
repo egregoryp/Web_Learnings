@@ -1,0 +1,136 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color:black;     
+    background: linear-gradient(to bottom, #745656,#d4c4cc, #745656, #d4c4cc, #745656);                 
+}
+nav{
+    text-align: center;
+}
+.menu {
+    text-decoration: none;
+    color: rgb(70, 21, 2);
+    padding-right: 3px;
+    padding-left: 3px;     
+    font-weight: 900;
+}
+.menu:hover{
+    color: #c2a3b2;
+    background-color: #d4c4cc;
+}
+a:hover{
+    color: #0c0106;
+    background-color: #745353;
+}
+#logo{    
+    background-image: url('../images/predator-logo.png'); 
+    width:630px;  
+    height:125px; 
+    background-position-x: center;    
+    background-position-y: 42%;    
+    margin-left: auto; 
+    margin-right: auto;  
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 3px #745353; 
+}
+.center{
+    text-align: center;
+}
+#mainContent{        
+    box-shadow: 1px 2px 2px 2px #713737;
+    border-radius: 15px;
+    padding: 15px;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #d4c4cc;    
+    opacity: 0.85;     
+}
+.mainPrincipal {
+    width: 860px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#topGamingLaptops {
+    border: medium solid #caa0af;
+    border-spacing: 0pc;    
+    margin: auto;
+}
+hr {
+    border-style:solid; 
+    border-color:#713737; 
+    border-width:2px;
+}
+.titRow{
+    background-color: #713737;    
+    color: lightgray;    
+    font-weight: bold;
+    text-align: center;
+}
+.oddRow{
+    background-color: #b395a0;
+}
+.evenRow{
+    background-color: #d4c4cc;
+}
+.brandM{
+    text-align: center;
+    font-weight: bold;
+}
+.justified{
+    text-align: justify;
+}
+.gifBullets{
+    list-style-image: url(../images/animated-bullet-14.gif);
+}
+.gifBullets2{
+    list-style-image: url(../images/animated-bullet-25.gif);
+}
+footer{
+    text-align: right;
+}
+.menu {
+    text-decoration: none;
+    color: #d4c4cc;
+    background-color: #713737;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-right: 27px;
+    padding-left: 27px;     
+    padding-bottom: 5px;
+    font-weight: 900;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menu:hover{
+    color: #713737;
+    background-color: #b395a0;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #713737;    
+    min-width: 169px;    
+    border-radius: 3px;
+    padding-top: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: #b395a0;
+    font-weight: 900;
+    font-size: 0.9em;
+    padding: 7px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #713737;
+    background-color: #b395a0;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
