@@ -41,27 +41,182 @@ table td.leftSideTbl {
     vertical-align: top;    
     width: 38%;               
 }
+label{
+    font-weight: bold;
+    margin-left: 2px;
+}
+input[type="text"]  {        
+    opacity: 60%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+}
+input[type="tel"]  {        
+    opacity: 60%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+}
+input[type="email"]  {        
+    opacity: 60%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+}
+input[type="email"]  {        
+    opacity: 60%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+}
+textarea   {            
+    opacity: 60%;
+    border-bottom: 1px solid #4e4d4d;
+}
+select {
+    opacity: 90%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+    width: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color:#4e4d4d;     
+ }
+ input[type="number"]{
+    opacity: 90%;
+    border: none;
+    border-bottom: 1px solid #4e4d4d;
+ }
+input[name="txtFirstName"] {
+    width: 70%;
+}
+input[name="txtLastName"] {    
+    width: 64.1%;
+}
+input[name="txtPhoneNumber"] {
+    width: 54.8%;
+}
+input[name="txtAddress"] {
+    width: 76%;
+}
+input[name="optPersonType"] {        
+    width: 10%;
+} 
+input[name="txtEmail"] {    
+    width: 75%;
+} 
+select[name="propertyType"] {        
+    margin-left: 10%;
+    width: 150px;
+    text-align: center;
+} 
+input[name="propertyFloor"] {    
+    margin-left: 10%;
+    width: 23.5%;
+    text-align: right;
+} 
+input[name="propertyBathrooms"] {    
+    margin-left: 2%;
+    width: 13%;
+    text-align: right;
+} 
+select[name="propertySize"] {        
+    margin-left: 5%;
+    width: 150px;
+    text-align: center;
+} 
+input[name="propertyRooms"] {    
+    margin-left: 7.5%;
+    width: 23.3%;
+    text-align: right;
+} 
+input[name="propertyParking"] {    
+    margin-left: 2%;
+    width: 11.5%;
+    text-align: right;
+} 
+#propertyJacuzzi{
+    margin-right: 40%;
+} 
+#propertyWCloset{
+    margin-right: 23%;
+} 
+#propertyConditioner{
+    margin-right: 3.1%;
+} 
+#propertyBalcony{
+    margin-right: 38%;
+} 
+#propertyMClosets{
+    margin-right: 22.2%;
+} 
+#propertyWFilter{
+    margin-right: 10%;
+} 
 input[name="txtBestThing"] {
     width: 98%;
 }
 input[name="txtImprove"] {
     width: 98%;
 }
-input[name="txtCourseName"] {
-    width: 73.3%;
+.switch {
+    margin-left:15px;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+.switch:focus {    
+    border: 3px 3px 3px 3px solid #000000;
+  }
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-input[name="txtYear"] {
-    width: 22%;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
-input[name="txtInstructor"] {
-    width: 82.7%;
-} 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 0.5px;
+  bottom: 0.5px;  
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}  
+input:checked + .slider {
+  background-color: rgba(0,1,121,0.8);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px rgba(0,1,121,0.8);
+}  
+input:checked + .slider:before {
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(14px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
 
+.slider.round:before {
+  border-radius: 50%;
+}
 .spaceRd{
     margin: 20px;
 }
 .spaceRdWhole{
     margin: 25px;
+}
+.topSpace{
+    padding-top: 1em;
 }
 .everyQuestion > td{
     padding-bottom: 1em;
@@ -92,7 +247,7 @@ h1 {
     font-variant: small-caps;
     text-transform: capitalize;  
     text-align: center;  
-    padding: 2px;
+    padding: 1px;
     margin: 2px;
 }
 h2 {
@@ -105,18 +260,19 @@ h2 {
 }
 h3 {
     /*color: #6B6B00;*/
-    color: #6F6F6F;
+    color: #9e9d9d;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     font-variant: small-caps;
     text-transform: capitalize;  
     text-align: left;      
     display:inline;     
+    padding-left: 5px;
 }
 .subHeading{
     text-decoration: none;
     color: #e4e9e0;
-    background-color: #000179;
+    background-color: rgba(0,1,121,0.8);
     border-radius: 3px;
     padding-top: 1px;
     padding-right: 10px;
@@ -124,6 +280,9 @@ h3 {
     padding-bottom: 1px;            
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
     opacity: 80%;  
+}
+.bottomSpace{
+    padding-bottom: 200px;
 }
 hr{
     border-style:solid; 
@@ -194,7 +353,7 @@ h4{
     padding: 2px 0px 0px 0px;
 }
 .leftSide{
-    width: 55%;      
+    width: 50%;      
 }
 #ratingNum{
     padding-left: 23px;

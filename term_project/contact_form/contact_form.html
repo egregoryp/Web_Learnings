@@ -6,7 +6,7 @@
   -->
 
 <head>
-    <title>Continuing Education Form</title>
+    <title>Contact Form</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles.css" type="text/css">
 </head>
@@ -47,288 +47,212 @@
                 <table id="mainTable">
                     <tr>
                         <td colspan="2">
-                            <h1>Centennial College</h1>
-                            <h2>Continuing Education Course / Instructor Evaluation</h2>
+                            <h1>LVP - Real Estate Investment</h1>
+                            <h2>Contact Form</h2>
                         </td>
                         <br>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <p>Please read each statement carefully and consider each one infividually.
-                                <b>Fill</b> the form according to your choice. (<b>One answer</b> for
-                                each
-                                question).
+                            <p>Please <b>Fill</b> the form according to your preferences for a real estate property.
+                                (<b>One answer</b> for
+                                each question).
                             </p>
                         </td>
                     </tr>
                     <tr>
+                        <td class="leftSide">
+                            <label for="txtFirstName">First Name:</label>
+                            <input name="txtFirstName" type="text" tabindex="1" required="required">
+                        </td>
+                        <td>
+                            <label id="lblLastName" for="txtLastName">Last Name:</label>
+                            <input name="txtLastName" type="text" tabindex="3" required="required">
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td class="leftSide">
+                            <label for="txtAddress">Address:</label>
+                            <input name="txtAddress" type="text" tabindex="5">
+                        </td>
+                        <td>
+                            <label for="txtPhoneNumber">Phone Number:</label>
+                            <input name="txtPhoneNumber" type="tel" tabindex="7"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999"
+                                required="required">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftSide">
+                            <label for="optPersonType">Legal Person:</label>
+                            <input id="optPersonType" name="optPersonType" tabindex="9" type="radio" value="N"
+                                required="required" checked>
+                            Natural
+                            <input id="optPersonType" name="optPersonType" tabindex="11" type="radio" value="J">
+                            Juridical
+                        </td>
+                        <td>
+                            <label for="txtEmail">Email:</label>
+                            <input name="txtEmail" type="email" tabindex="12" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required="required" placeholder="johndoe@lvp.com">
+                        </td>
+                    </tr>
+                    <tr class="everyQuestion">
                         <td colspan="2">
-                            <span>
-                                <label for="txtCourseName">Course Name/Code:</label>
-                                <input name="txtCourseName" type="text" tabindex="1">
+                            <span class="initialInfo">
+
                             </span>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <span>
-                                <label for="optSemester">Education:</label>
-                                <input id="optSemester" name="optSemester" tabindex="3" type="radio" value="F"> Fall
-                                <input id="optSemester" name="optSemester" tabindex="5" type="radio" value="W">
-                                Winter
-                                <input id="optSemester" name="optSemester" tabindex="7" type="radio" value="S">
-                                Spring /
-                                Summer
-                                <label class="lblYear" for="txtYear">Year: </label>
-                                <input name="txtYear" type="text" tabindex="9">
-                            </span>
+                        <td colspan="2" class="subHeading">
+                            <h3>Basic Specifications</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="topSpace">
+                            1. <label for="propertyType">Type of property:</label>
+                            <select name="propertyType" id="propertyType" tabindex="13">
+                                <option value="condo">Condominium</option>
+                                <option value="house">House</option>
+                            </select>
+                        </td>
+                        <td class="topSpace">
+                            2. <label for="propertySize">Size of the property:</label>
+                            <select name="propertySize" id="propertySize" tabindex="15">
+                                <option value="60">60 mts</option>
+                                <option value="80">80 mts</option>
+                                <option value="90">90 mts</option>
+                                <option value="100">100 mts</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="topSpace">
+                            3. <label for="propertyFloor">Desired Floor Number:</label>
+                            <input type="number" id="propertyFloor" name="propertyFloor" min="1" max="7" value="1"
+                                tabindex="17">
+                        </td>
+                        <td class="topSpace">
+                            4. <label for="propertyRooms">Desired Rooms Quantity:</label>
+                            <input type="number" id="propertyRooms" name="propertyRooms" min="1" max="3" value="1"
+                                tabindex="19">
                         </td>
 
                     </tr>
                     <tr class="everyQuestion">
-                        <td colspan="2">
-                            <span>
-                                <label for="txtInstructor">Instructor:</label>
-                                <input name="txtInstructor" type="text" tabindex="11">
-                            </span>
+                        <td class="topSpace">
+                            5. <label for="propertyBathrooms">Desired Number of Bathrooms:</label>
+                            <input type="number" id="propertyBathrooms" name="propertyBathrooms" min="1" max="3"
+                                value="1" tabindex="21">
                         </td>
+                        <td class="topSpace">
+                            6. <label for="propertyParking">Desired Number of Parking Lots:</label>
+                            <input type="number" id="propertyParking" name="propertyParking" min="1" max="3" value="1"
+                                tabindex="23">
+                        </td>
+
                     </tr>
                     <tr>
                         <td colspan="2" class="subHeading">
-                            <h3>Instructor</h3>
+                            <h3>Preferences to Include</h3>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="questionLabel">
-                            1. <span class="importantMsg">knowledge</span> of subject?
+                        <td class="topSpace">
+                            7. <label id="propertyJacuzzi" for="propertyJacuzzi">Jacuzzi:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyJacuzzi" tabindex="25" unchecked>
+                                <span class="slider round"></span>
+                            </label>
                         </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optKnowledge" type="radio" value="E" tabindex="13"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optKnowledge" type="radio" value="G" tabindex="15"> (b) Good
-                        </td>
-                        <td>
-                            <input name="optKnowledge" type="radio" value="F" tabindex="17"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optKnowledge" type="radio" value="N" tabindex="19"> (d) Not
-                            Satisfactory
+                        <td class="topSpace">
+                            8. <label id="propertyBalcony" for="propertyBalcony">Balcony:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyBalcony" tabindex="27" checked>
+                                <span class="slider round"></span>
+                            </label>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="questionLabel">
-                            2. <span class="importantMsg">helpfulness?</span>
+                        <td class="topSpace">
+                            9. <label id="propertyWCloset" for="propertyWCloset">Walking Closet:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyWCloset" tabindex="29" checked>
+                                <span class="slider round"></span>
+                            </label>
                         </td>
+                        <td class="topSpace">
+                            10. <label id="propertyMClosets" for="propertyMClosets">Mirror Closets:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyMClosets" tabindex="31" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+
                     </tr>
                     <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optHelpfulness" type="radio" value="E" tabindex="21"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optHelpfulness" type="radio" value="G" tabindex="23"> (b) Good
+                        <td class="topSpace">
+                            11. <label id="propertyConditioner" for="propertyConditioner">Central Air Conditioner:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyConditioner" tabindex="33" unchecked>
+                                <span class="slider round"></span>
+                            </label>
                         </td>
-                        <td>
-                            <input name="optHelpfulness" type="radio" value="F" tabindex="25"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optHelpfulness" type="radio" value="N" tabindex="27"> (d) Not
-                            Satisfactory
+                        <td class="topSpace">
+                            12. <label id="propertyWFilter" for="propertyWFilter">Kitchen Water filter:</label>
+                            <label class="switch">
+                                <input type="checkbox" name="propertyWFilter" tabindex="35" checked>
+                                <span class="slider round"></span>
+                            </label>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            3. <span class="importantMsg">courtesy and respect</span> for all students?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optCourtesy" type="radio" value="E" tabindex="29"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optCourtesy" type="radio" value="G" tabindex="31"> (b) Good
-                        </td>
-                        <td>
-                            <input name="optCourtesy" type="radio" value="F" tabindex="33"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optCourtesy" type="radio" value="N" tabindex="35"> (d) Not
-                            Satisfactory
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            4. <span class="importantMsg">communication</span> skills?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optCommunication" type="radio" value="E" tabindex="37"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optCommunication" type="radio" value="G" tabindex="39"> (b)
-                            Good
-                        </td>
-                        <td>
-                            <input name="optCommunication" type="radio" value="F" tabindex="41"> (c)
-                            Fair
-                            <span class="spaceRd"></span>
-                            <input name="optCommunication" type="radio" value="N" tabindex="43"> (d) Not
-                            Satisfactory
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            5. overall <span class="importantMsg">performance</span>
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optPerformance" type="radio" value="E" tabindex="45"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optPerformance" type="radio" value="G" tabindex="47"> (b) Good
-                        </td>
-                        <td>
-                            <input name="optPerformance" type="radio" value="F" tabindex="49"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optPerformance" type="radio" value="N" tabindex="51"> (d) Not
-                            Satisfactory
-                        </td>
+
                     </tr>
                     <tr>
                         <td colspan="2" class="subHeading">
-                            <h3>Course</h3>
+                            <h3>Customer Satisfaction</h3>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="questionLabel">
-                            6. How would you rate the <span class="importantMsg">course material</span>?
+                        <td colspan="2" class="topSpace">                            
+                            13. How would you rate <span class="importantMsg">LVP Real Estate Agency</span> Service (overall)?
                         </td>
                     </tr>
                     <tr class="everyQuestion">
                         <td class="leftSideTbl">
-                            <input name="optMaterial" type="radio" value="E" tabindex="53"> (a)
-                            Excellent
+                            <input name="optOverall" type="radio" value="E" tabindex="37"> (a) Excellent
                             <span class="spaceRd"></span>
-                            <input name="optMaterial" type="radio" value="G" tabindex="55"> (b) Good
+                            <input name="optOverall" type="radio" value="G" tabindex="39"> (b) Good
                         </td>
                         <td>
-                            <input name="optMaterial" type="radio" value="F" tabindex="57"> (c) Fair
+                            <input name="optOverall" type="radio" value="F" tabindex="41"> (c) Fair
                             <span class="spaceRd"></span>
-                            <input name="optMaterial" type="radio" value="N" tabindex="59"> (d) Not
+                            <input name="optOverall" type="radio" value="N" tabindex="43"> (d) Not
                             Satisfactory
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            7. How much did this course meet your <span class="importantMsg">expectations</span>?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optExpectations" type="radio" value="E" tabindex="61"> (a)
-                            Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optExpectations" type="radio" value="G" tabindex="63"> (b) Good
-                        </td>
-                        <td>
-                            <input name="optExpectations" type="radio" value="F" tabindex="65"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optExpectations" type="radio" value="N" tabindex="67"> (d) Not
-                            Satisfactory
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            8. How would you rate this course (<span class="importantMsg">overall</span>)?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td class="leftSideTbl">
-                            <input name="optOverall" type="radio" value="E" tabindex="69"> (a) Excellent
-                            <span class="spaceRd"></span>
-                            <input name="optOverall" type="radio" value="G" tabindex="71"> (b) Good
-                        </td>
-                        <td>
-                            <input name="optOverall" type="radio" value="F" tabindex="73"> (c) Fair
-                            <span class="spaceRd"></span>
-                            <input name="optOverall" type="radio" value="N" tabindex="75"> (d) Not
-                            Satisfactory
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="subHeading">
-                            <h3>General Information</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            9. Was the <span class="importantMsg">course outline</span>
-                            reviewd/explained at the
-                            beginning of yout course?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td colspan="2">
-                            <span>
-                                <input name="optOutline" type="radio" value="Y" tabindex="77"> (a) Yes
-                                <span class="spaceRdWhole"></span>
-                                <input name="optOutline" type="radio" value="N" tabindex="79"> (b) No
-                                <span class="spaceRdWhole"></span>
-                                <input name="optOutline" type="radio" value="X" tabindex="81"> (c) Not Sure
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="questionLabel">
-                            10. Would you <span class="importantMsg">recommend</span> this course to a
-                            friend with
-                            the same interests?
-                        </td>
-                    </tr>
-                    <tr class="everyQuestion">
-                        <td colspan="2">
-                            <span>
-                                <input name="optRecommend" type="radio" value="Y" tabindex="83"> (a) Yes
-                                <span class="spaceRdWhole"></span>
-                                <input name="optRecommend" type="radio" value="N" tabindex="85"> (b) No
-                                <span class="spaceRdWhole"></span>
-                                <input name="optRecommend" type="radio" value="X" tabindex="87"> (c) Not
-                                Sure
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="subHeading">
-                            <h3>Any Other Comments</h3>
-                            <span>(please use the back of the computer
-                                card or this paper if necessary)</span>
                         </td>
                     </tr>
                     <tr class="otherQuestion">
                         <td class="questionLabel">
-                            11. What is the <span class="importantMsg">best thing</span> about this
-                            course?
+                            14. What is the <span class="importantMsg">best thing</span> about doing business with LVP Real Estate Agency?
                         </td>
-                        <td>
-                            <input name="txtBestThing" type="text" size="70" tabindex="89">
+                        <td class="topSpace">
+                            <input name="txtBestThing" type="text" size="70" tabindex="45">
                         </td>
-                    </tr>
-                    <tr class="otherQuestion">
-                        <td class="questionLabel">
-                            12. How could we <span class="importantMsg">improve</span> this course?
-                        </td>
-                        <td>
-                            <input name="txtImprove" type="text" size="70" tabindex="91">
+                    </tr>                    
+                    <tr>
+                        <td colspan="2" class="subHeading">
+                            <h3>Other Comments</h3>
                         </td>
                     </tr>
                     <tr class="otherQuestion">
-                        <td colspan="2">
-                            <span>
-                                <div><label for="txtSpecialReq">13. Other:</label></div>
-                                <textarea id="txtSpecialReq" name="txtSpecialReq" cols="110" rows="4" tabindex="93"
-                                    placeholder="Please let us know about other comments (e.g. complaints, suggestions, etc.)"></textarea>
-                            </span>
+                        <td colspan="2" class="topSpace">
+                            <span>15. Comments:</span>
+                            <textarea id="txtSpecialReq" name="txtSpecialReq" cols="110" rows="4" tabindex="93"
+                                placeholder="Please let us know about other requirements (e.g. valcony extension, special amenities etc.)"></textarea>
+
                         </td>
                     </tr>
                     <tr>
@@ -340,13 +264,13 @@
                 </table>
             </form>
             <br>
-            <p class="finalMsg">Thank you! We pay attention to your feedback!</p>
+            <p class="finalMsg">Thank you! We'll reply as soon as possible to present the best options according to your
+                desires.</p>
             <p class="finalMsg">
                 Web:
-                <a href="https://www.centennialcollege.ca/continuing_education"
-                    target="_blank">www.centennialcollege.ca/continuing_education</a>
+                <a href="https://www.lvp.com/" target="_blank">www.lvp.com.do</a>
                 Email:
-                <a href="mailto:Continuingeducation@centennialcollege.ca">Continuingeducation@centennialcollege.ca</a>
+                <a href="mailto:JohnDoe@lvp.com.do">JohnDoe@lvp.com.do</a>
             </p>
             <br>
         </main>
