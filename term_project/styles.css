@@ -255,8 +255,7 @@ h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     font-variant: small-caps;
-    text-transform: capitalize;  
-    text-align: center;      
+    text-transform: capitalize;       
 }
 h3 {
     /*color: #6B6B00;*/
@@ -268,6 +267,9 @@ h3 {
     text-align: left;      
     display:inline;     
     padding-left: 5px;
+}
+.justified{
+    text-align: justify;
 }
 .subHeading{
     text-decoration: none;
@@ -354,6 +356,13 @@ h4{
 }
 .leftSide{
     width: 50%;      
+}
+.leftSide2{
+    padding-left: 10%;    
+    width: 45%;      
+}
+.rightSide2{    
+    padding-right: 4.5%;          
 }
 #ratingNum{
     padding-left: 23px;
