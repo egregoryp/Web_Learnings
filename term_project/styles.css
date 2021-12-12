@@ -303,6 +303,21 @@ h5 {
     text-align: left;      
     display:inline;         
 }
+.h7{
+    color: #000179;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-variant: small-caps;
+    text-transform: capitalize;  
+    text-align: left;          
+    text-decoration: underline;
+    display:inline;  
+}
+.twoColumns {    
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;    
+}
 .thumbnailImage{
     margin-top:20px; 
     margin-left:20px; 
@@ -413,6 +428,15 @@ hr{
 .leftSide2{
     padding-left: 5%;    
     width: 45%;      
+}
+.leftSideImg{
+    padding-left: 10%;    
+    width: 70%;      
+}
+.bulletTable{
+    display: list-item;         
+    list-style-type: disc;      
+    list-style-position: inside;
 }
 .rightSide2{    
     padding-right: 4.5%;          
