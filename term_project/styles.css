@@ -105,7 +105,7 @@ input[name="txtLastName"] {
     width: 64.1%;
 }
 input[name="txtPhoneNumber"] {
-    width: 54.8%;
+    width: 53.8%;
 }
 input[name="txtAddress"] {
     width: 76%;
@@ -114,7 +114,7 @@ input[name="optPersonType"] {
     width: 10%;
 } 
 input[name="txtEmail"] {    
-    width: 75%;
+    width: 76%;
 } 
 select[name="propertyType"] {        
     margin-left: 10%;
@@ -147,22 +147,22 @@ input[name="propertyParking"] {
     text-align: right;
 } 
 #propertyJacuzzi{
-    margin-right: 40%;
+    margin-right: 38%;
 } 
 #propertyWCloset{
     margin-right: 23%;
 } 
 #propertyConditioner{
-    margin-right: 3.1%;
+    margin-right: 5.1%;
 } 
 #propertyBalcony{
-    margin-right: 38%;
+    margin-right: 40%;
 } 
 #propertyMClosets{
-    margin-right: 22.2%;
+    margin-right: 22.5%;
 } 
 #propertyWFilter{
-    margin-right: 10%;
+    margin-right: 8.5%;
 } 
 input[name="txtBestThing"] {
     width: 98%;
@@ -349,6 +349,15 @@ h4 {
     border-radius: 20px;    
     width:230px;      
 }
+#logoImgCredits{
+    text-align: center;       
+    box-shadow: 1px 2px 3px #000179;
+    padding: 10px 10px 10px 10px; 
+    margin-top: 10px;  
+    margin-left: 20px;  
+    border-radius: 5px;
+    float: right;
+}
 .center{
     text-align: center;
 }
@@ -391,7 +400,7 @@ h4 {
     padding: 2px 0px 0px 0px;
 }
 .leftSide{
-    width: 50%;      
+    width: 55%;      
 }
 .leftSide2{
     padding-left: 5%;    
@@ -462,7 +471,7 @@ footer{
     color: #e4e9e0;
     font-weight: 900;
     font-size: 0.9em;
-    padding: 7px 54px 7px 53px;
+    padding: 7px 72.5px 7px 65px;
     text-decoration: none;
     display: block;
 }
