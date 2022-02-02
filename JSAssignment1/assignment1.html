@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by Epena 
+  --Author: Elias Gregorio Pena Evertz
+  --Student Number: 301166037
+  -->
+
+<head>
+    <title>Continuing Education Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="assignment1.js"></script>
+</head>
+
+<body>
+    <div id="mainContent">
+        <header id="top">
+            <br>
+            <div id="logo">
+                <a href="https://www.centennialcollege.ca/" target="_blank" tittle="Centennial College">
+                    <img id="logoImg" src="images/CentennialCollegeLogoP.png" alt="Setas logo">
+                </a>
+            </div>
+            <br>
+            <hr>
+        </header>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCalc(event, 'Metric')">Metric BMR Calculator</button>
+            <button class="tablinks active" onclick="openCalc(event, 'Imperial')">Imperial BMR Calculator</button>
+        </div>
+
+        <main>
+            <div id="Imperial" class="tabcontent">
+                <form name=formImperial>
+                    <table id="mainTable">
+                        <tr>
+                            <td colspan="2">
+                                <br>
+                                <h1>Imperial BMR Calculator</h1>
+                                <h2>Based on Harris–Benedict's original equations published in 1918 and 1919.</h2>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Please <b>Fill</b> the information below to calculate your BMR.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Information</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTblTop">
+                                <label for="txtGender">Gender:</label>
+                            </td>
+                            <td>
+                                <select id="txtGender" name="txtGender" tabindex="1">
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTblTop">
+                                <label for="txtAge">Age:</label>
+                            </td>
+                            <td>
+                                <input id="txtAge" name="txtAge" type="number" tabindex="3" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Height</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <label for="txtFeet">Feet:</label>
+                                <input id="txtFeet" name="txtFeet" type="number" tabindex="5" min="1" required>
+                            </td>
+                            <td>
+                                <label for="txtInches">Inches:</label>
+                                <input id="txtInches" name="txtInches" type="number" tabindex="7" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Weight</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <label for="txtMeasure">Mesure:</label>
+                                <select id="txtMeasure" name="txtMesure" type="number" tabindex="9" min="1">
+                                    <option value="KG">Kilograms</option>
+                                    <option value="LB">Pounds</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="txtKglb"> Kg / Lb:</label>
+                                <input id="txtKglb" name="txtKglb" type="number" tabindex="11" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Activity Level</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <div>
+                                        <input id="optActivity" name="optAct" type="radio" value="1.2" tabindex="13"
+                                            checked>I
+                                        am sedentary (littel or no exercise)
+                                    </div>
+                                    <div>
+                                        <input id="optActivity2" name="optAct" type="radio" value="1.375"
+                                            tabindex="15">I am light active (light exercise or sports 1-2 days per week)
+                                    </div>
+                                    <div>
+                                        <input id="optActivity3" name="optAct" type="radio" value="1.55" tabindex="17">I
+                                        am moderately active (moderate exercise or or sports 2-3 days per week)
+                                    </div>
+                                    <div><input id="optActivity4" name="optAct" type="radio" value="1.725"
+                                            tabindex="17">I am active (hard exercise or or sports 4-5 days per week)
+                                    </div>
+                                    <div><input id="optActivity5" name="optAct" type="radio" value="1.9" tabindex="19">I
+                                        am very active (hard exercise or sports 6-7 days per week)
+                                    </div>
+                                    <div><input id="optActivity6" name="optAct" type="radio" value="2.4" tabindex="21">I
+                                        am super active (very hard exercise or sports and physical job or 2x training)
+                                    </div>
+                                    <span class="spaceRd"></span>
+                            </td>
+                        </tr>
+                        <tr class="ResultPane">
+                            <td colspan="2" class="subHeading">
+                                <h3>Results</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="RT" colspan="2">
+                                <div id="Results"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <input id="btnCalculate" name="btnCalculate" tabindex="23" type="submit"
+                                    value="Calculate" onclick="return imperialCalc();">     
+                                <input id="btnReset" name="btnReset" tabindex="25" type="reset" value="Clear Form"
+                                    onclick="hideResult();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div id="Metric" class="tabcontent">
+                <form name=formMetric action="#">
+                    <table id="mainTable">
+                        <tr>
+                            <td colspan="2">
+                                <br>
+                                <h1>Metric BMR Calculator</h1>
+                                <h2>Based on Harris–Benedict's original equations published in 1918 and 1919.</h2>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Please <b>Fill</b> the information below to calculate your BMR.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Information</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTblTop">
+                                <label for="txtGenderM">Gender:</label>
+                            </td>
+                            <td>
+                                <select id="txtGenderM" name="txtGenderM" tabindex="1">
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTblTop">
+                                <label for="txtAgeM">Age:</label>
+                            </td>
+                            <td>
+                                <input id="txtAgeM" name="txtAgeM" type="number" tabindex="3" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Height</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <label for="txtFeetM">Feet:</label>
+                                <input id="txtFeetM" name="txtFeetM" type="number" tabindex="5" min="1" required>
+                            </td>
+                            <td>
+                                <label for="txtInchesM">Inches:</label>
+                                <input id="txtInchesM" name="txtInchesM" type="number" tabindex="7" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Your Weight</h3>
+                            </td>
+                        </tr>
+                        <tr class="everyQuestion">
+                            <td class="leftSideTbl">
+                                <label for="txtMeasureM">Mesure:</label>
+                                <select id="txtMeasureM" name="txtMesureM" type="number" tabindex="9" min="1">
+                                    <option value="KG">Kilograms</option>
+                                    <option value="LB">Pounds</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="txtKglbM"> Kg / Lb:</label>
+                                <input id="txtKglbM" name="txtKglbM" type="number" tabindex="11" min="1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="subHeading">
+                                <h3>Activity Level</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span>
+                                    <div>
+                                        <input id="optActivity" name="optActM" type="radio" value="1.2" tabindex="13"
+                                            checked>I
+                                        am sedentary (littel or no exercise)
+                                    </div>
+                                    <div>
+                                        <input id="optActivity2" name="optActM" type="radio" value="1.375"
+                                            tabindex="15">I am light active (light exercise or sports 1-2 days per week)
+                                    </div>
+                                    <div>
+                                        <input id="optActivity3" name="optActM" type="radio" value="1.55"
+                                            tabindex="17">I am moderately active (moderate exercise or or sports 2-3
+                                        days per week)
+                                    </div>
+                                    <div><input id="optActivity4" name="optActM" type="radio" value="1.725"
+                                            tabindex="17">I am active (hard exercise or or sports 4-5 days per week)
+                                    </div>
+                                    <div><input id="optActivity5" name="optActM" type="radio" value="1.9"
+                                            tabindex="19">I am very active (hard exercise or sports 6-7 days per week)
+                                    </div>
+                                    <div><input id="optActivity6" name="optActM" type="radio" value="2.4"
+                                            tabindex="21">I am super active (very hard exercise or sports and physical
+                                        job or 2x training)
+                                    </div>
+                                    <span class="spaceRd"></span>
+                            </td>
+                        </tr>
+                        <tr class="ResultPaneM">
+                            <td colspan="2" class="subHeading">
+                                <h3>Results</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="RTM" colspan="2">
+                                <div id="ResultsM"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <input id="btnCalculateM" name="btnCalculateM" tabindex="23" type="submit"
+                                    value="Calculate" onclick="return metricCalc();">                                
+                                <input id="btnResetM" name="btnResetM" tabindex="25" type="reset" value="Clear Form"
+                                    onclick="hideResultM();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <br>
+            <hr>
+            <h6>&copy;&nbsp;Elias Gregorio Pena Evertz - Student Number: 301166037 Course: COMP125 SEC009 Semester:
+                Winter 2022 Copyright</h6>
+            <hr>
+        </footer>
+    </div>
+</body>
+
+</html>

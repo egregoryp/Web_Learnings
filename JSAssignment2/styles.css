@@ -1,0 +1,178 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color:gray; 
+    background-color:#d4c4cc;
+    background: linear-gradient(to bottom, lavender, #a8c78d, lavender, #a8c78d);
+}
+#Metric{
+    display: none;    
+}
+#mainContent{    
+    box-shadow: 1px 2px 2px 2px olive;    
+    padding: 15px;
+    width: 1080px;       
+    min-height: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ecfcec;    
+    opacity: 0.90;   
+}
+main {    
+    margin-right: auto;
+    margin-left: auto;
+    font-size: small;
+}
+#formImperial{
+    border: 1px solid olive;    
+    box-shadow: 1px 3px 3px olive;
+}
+table#topTable{        
+    width: 30%;
+    margin-left: 35%;         
+    margin-right: 15%;    
+}
+table#mainTable{    
+    border: 1px solid olive;    
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px olive;
+    width: 30%;
+    margin-left: 35%;      
+    padding-bottom: 1%;
+}
+table#resultsPane{    
+    border: 1px solid olive;    
+    border-radius: 3px;        
+    /*margin-left: 15%;
+    margin-right: 15%;*/
+    display: none;
+}
+table#resultsTable{
+    border: 1px solid olive;    
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px olive;    
+    /*margin-left: 15%;
+    margin-right: 15%;*/
+    margin-bottom: 2%;   
+    display: none;
+}
+#resultsTable table, #resultsTable th, #resultsTable td{
+    border: 1px solid olive;
+    border-radius: 3px;
+  }
+#results{
+    box-shadow: 1px 2px 3px olive;    
+    padding: 15px;
+    opacity: 0.90;       
+    display: none;
+}
+#generatedTable{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="text"]  {        
+    opacity: 60%;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+input[name="txtRows"] {    
+    width: 23%;
+}
+input[name="txtColumns"] {    
+    width: 23%;
+}
+hr{
+    border-style:solid; 
+    border-color:olive; 
+    border-width:2px;
+    margin-left: 18px; 
+    margin-right:18px;
+}
+table td.leftSideTblTop {
+    padding-left: 32%;
+    width: 55%;               
+}
+table td.leftSideTbl {
+    padding-left: 18%;
+    width: 50%;               
+}
+.spaceRd{
+    margin: 20px;    
+}
+.spaceRdWhole{
+    margin: 25px;
+}
+.everyQuestion > td{
+    padding-bottom: 1em;
+}
+.otherQuestion > td{
+    padding-bottom: 0.5em;
+}
+#logo{
+    text-align: center;   
+    width:430px;  
+    height:120px; 
+    background-position-x: center;    
+    background-position-y: 42%;    
+    margin-left: auto; 
+    margin-right: auto;  
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px olive;
+}
+#logoImg{          
+    padding: 25px 30px 15px 30px; 
+    margin-right: 20px;  
+    border-radius: 5px;
+}
+h1 {
+    color: #6B6B00;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-variant: small-caps;
+    text-transform: capitalize;  
+    text-align: center;  
+    padding: 2px;
+    margin: 2px;
+}
+h2 {
+    color: #6B6B00;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-variant: small-caps;
+    text-transform: capitalize;  
+    text-align: center;  
+    padding: 2px;
+    margin: 2px;
+}
+h3 {
+    /*color: #6B6B00;*/
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-variant: small-caps;
+    text-transform: capitalize;  
+    text-align: left;      
+    display:inline; 
+    opacity: 60%;
+}
+.subHeading{
+    text-decoration: none;
+    color: #e4e9e0;
+    background-color: olive;
+    border-radius: 3px;
+    padding-top: 1px;
+    padding-right: 10px;
+    padding-left: 5px;     
+    padding-bottom: 1px;            
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+    opacity: 80%;  
+}
+
+.center{
+    text-align: center;
+}    
+footer {    
+    text-align: center;
+    clear: both;
+    position: relative;
+    margin-top: 0px;
+}

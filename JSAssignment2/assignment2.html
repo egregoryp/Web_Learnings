@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created by Epena 
+  --Author: Elias Gregorio Pena Evertz
+  --Student Number: 301166037
+  -->
+
+<head>
+    <title>Generate Table</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="assignment2.js"></script>
+</head>
+
+<body>
+    <div id="mainContent">
+        <header id="top">
+            <br>
+            <div id="logo">
+                <a href="https://www.centennialcollege.ca/" target="_blank" tittle="Centennial College">
+                    <img id="logoImg" src="images/CentennialCollegeLogoP.png" alt="Setas logo">
+                </a>
+            </div>
+            <br>
+            <hr>
+        </header>
+
+        <main>
+            <form id="form" name="form">
+                <table id="topTable">
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <h1>Assignment 2</h1>
+                            <h2>Dynamic Table creation.</h2>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="center">Please <b>Fill</b> the information below to create the table.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="mainTable">
+                    <tr>
+                        <td colspan="2" class="subHeading">
+                            <h3>Information</h3>
+                        </td>
+                    </tr>
+                    <tr class="everyQuestion">
+                        <td class="leftSideTblTop">
+                            <label for="txtRows">Rows:</label>
+                        </td>
+                        <td>
+                            <input id="txtRows" name="txtRows" type="number" tabindex="1" min="1" required>
+                        </td>
+                    </tr>
+                    <tr class="everyQuestion">
+                        <td class="leftSideTblTop">
+                            <label for="txtColumns">Columns:</label>
+                        </td>
+                        <td>
+                            <input id="txtColumns" name="txtColumns" type="number" tabindex="3" min="1" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="center">
+                            <input id="btnCalculate" name="btnCalculate" tabindex="5" type="submit" value="Create Table"
+                                onclick="return buildTable();">
+                            <input id="btnReset" name="btnReset" tabindex="7" type="reset" value="Reset"
+                                onclick="hideTable();">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table id="resultsPane">
+                    <tr>
+                        <th id="tableHeader" colspan="2" class="subHeading">
+                            <h3>Table</h3>
+                        </th>
+                    </tr>
+                </table>
+                <table id="resultsTable">
+                </table>
+
+            </form>
+
+        </main>
+        <footer>
+            <br>
+            <hr>
+            <h6>&copy;&nbsp;Elias Gregorio Pena Evertz - Student Number: 301166037 Course: COMP125 SEC009 Semester:
+                Winter 2022 Copyright</h6>
+            <hr>
+        </footer>
+    </div>
+</body>
+
+</html>
