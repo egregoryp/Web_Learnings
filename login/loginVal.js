@@ -14,7 +14,9 @@ function createEventListener() {
 }
 
 function login() {
-    if (validateCredentials()) {
+    var valCredentials = validateCredentials();
+    console.log(valCredentials);
+    if (valCredentials) {
         var assignments = window.opener.document.getElementsByClassName("dropdown");
         var loginMenu = window.opener.document.getElementById("login");
         for (var i = 0; i < assignments.length; i++) {
@@ -38,19 +40,18 @@ function validateCredentials() {
         },
         {
             username: "esantana",
-            password: "professor007js"
+            password: "prof007"
         }
     ];    
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    var vusername = document.getElementById("username").value;
+    var vpassword = document.getElementById("password").value;
 
     for (i = 0; i < objUsers.length; i++) {
-        if (username == objUsers[i].username && password == objUsers[i].password) {
+        if (vusername == objUsers[i].username && vpassword == objUsers[i].password) {
             return true;
-        } else {
-            return false
+        } else if (i == objUsers.length){
+            return false;
         }
-    }
-
+    }                
 }
