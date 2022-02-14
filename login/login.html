@@ -6,9 +6,10 @@
   -->
 
 <head>
-    <title>Greg Pena - Comp 2013 Sec001 Fall 2021 Home Page</title>
+    <title>Login Form</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">   
+    <script src="loginVal.js"></script> 
 </head>
 
 <body>
@@ -21,26 +22,24 @@
                     <img id="logoImg" src="../images/logo.gif" alt="Setas Centennial College">
                 </a>
             </div>
-            <hr>            
+            <br>
+            <hr>
         </header>
         <main>
-            <div id="profile">
-                <br>                
+            <form class="box" action="login.html">
+                <br>
                 <h2>Log in</h2>
-                <h4>
-                    <p>Sec: 001</p>
-                    <p>Student Name: Elias Gregorio Pena Evertz</p>
-                    <p>Student Number: 301166037</p>
-                </h4>
-            </div>
+                <input type="text" name="" placeholder="Enter Username" id="username" required>
+                <input type="password" name="" placeholder="Enter Password" id="password" required>
+                <input type="button" name="submitB" value="login">
+            </form>
         </main>
 
         <footer>
             <hr>
             <h6>
-                &nbsp;&nbsp;&copy;&nbsp;Elias Gregorio Pena Evertz - Student Number: 301166037 Course: COMP213 SEC001
-                Semester: Fall
-                2021 Copyright</h6>
+                &nbsp;&nbsp;&copy;&nbsp;Elias Gregorio Pena Evertz - Student Number: 301166037
+            </h6>
             <hr>
         </footer>
     </div>

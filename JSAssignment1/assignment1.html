@@ -22,9 +22,32 @@
                 </a>
             </div>
             <br>
-            <hr>
         </header>
-
+        <hr>
+        <nav>
+            <a class="menu" href="../index.html">Home</a>
+            <a class="menu" href="../index.html#info">Brief Personal Information</a>
+            <div class="dropdown">
+                <a class="menu" href="../assignment2/assignment2.html">Assignments</a>
+                <div class="dropdown-content">
+                    <a href="../assignment2/assignment2.html">Assignment 2</a>
+                    <a href="../assignment3/assignment3.html">Assignment 3</a>
+                    <a href="../assignment4/assignment4.html">Assignment 4</a>
+                    <a href="../term_project/real_estate_Index.html">Term Project</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="menu" href="assignment1.html">JS Assignmts</a>
+                <div class="dropdown-content">
+                    <a href="assignment1.html">JS Assignment 1</a>
+                    <a href="../JSAssignment2/assignment2.html">JS Assignment 2</a>
+                    <!--<a href="assignment4/assignment4.html">Assignment 4</a>
+                    <a href="term_project/real_estate_Index.html">Term Project</a>-->
+                </div>
+            </div>
+            <a class="menu" href="mailto:epenaeve@my.centennialcollege.ca">Contact Us</a>
+        </nav>
+        <hr>
         <div class="tab">
             <button class="tablinks" onclick="openCalc(event, 'Metric')">Metric BMR Calculator</button>
             <button class="tablinks active" onclick="openCalc(event, 'Imperial')">Imperial BMR Calculator</button>
@@ -151,7 +174,7 @@
                         <tr>
                             <td colspan="2" class="center">
                                 <input id="btnCalculate" name="btnCalculate" tabindex="23" type="submit"
-                                    value="Calculate" onclick="return imperialCalc();">     
+                                    value="Calculate" onclick="return imperialCalc();">
                                 <input id="btnReset" name="btnReset" tabindex="25" type="reset" value="Clear Form"
                                     onclick="hideResult();">
                             </td>
@@ -285,7 +308,7 @@
                         <tr>
                             <td colspan="2" class="center">
                                 <input id="btnCalculateM" name="btnCalculateM" tabindex="23" type="submit"
-                                    value="Calculate" onclick="return metricCalc();">                                
+                                    value="Calculate" onclick="return metricCalc();">
                                 <input id="btnResetM" name="btnResetM" tabindex="25" type="reset" value="Clear Form"
                                     onclick="hideResultM();">
                             </td>
